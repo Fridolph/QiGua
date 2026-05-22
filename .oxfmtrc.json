@@ -1,0 +1,6 @@
+{
+  "indent": { "type": "space", "size": 2 },
+  "semicolons": "always",
+  "singleQuote": true,
+  "trailingCommas": "all"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "qigua",
+  "private": true,
+  "packageManager": "pnpm@10.33.4",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "oxlint packages/*/src --fix",
+    "format": "oxfmt 'packages/*/src/**/*.{ts,vue}' --write",
+    "typecheck": "turbo typecheck",
+    "clean": "turbo clean"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.51.0",
+    "oxlint": "^1.66.0",
+    "sharp": "^0.34.5",
+    "turbo": "^2.9.14"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
+  }
+}

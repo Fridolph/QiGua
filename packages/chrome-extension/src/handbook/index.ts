@@ -1,0 +1,10 @@
+export { initLookup, lookupByTrigrams, lookupByBinary, getTrigrams } from "./lookup";
+export { divineByCoin } from "./coin";
+export type { CoinResult, CoinTossDetail } from "./coin";
+export { divineByName } from "./name";
+export type { NameResult } from "./name";
+export { divineByTime } from "./time";
+export type { TimeResult } from "./time";
+export { getBodyUseAnalysis, computeChangedHexagram } from "./wuxing";
+export type { BodyUseAnalysis } from "./wuxing";
+export type { Hexagram } from "./types";
