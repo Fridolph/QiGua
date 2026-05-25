@@ -69,130 +69,30 @@ const showChanged = computed(() => props.changed && props.changed.index !== prop
 </template>
 
 <style scoped>
-.result-view {
-  text-align: center;
-  display: grid;
-  gap: 10px;
-}
+.result-view { text-align: center; display: grid; gap: 12px; }
 
-.hex-symbol {
-  font-size: 52px;
-  line-height: 1;
-  color: #b54433;
-}
+.hex-symbol { font-size: 56px; line-height: 1; color: #b54433; }
+.hex-name  { font-size: 24px; font-weight: 800; letter-spacing: 0.06em; color: oklch(0.18 0.02 40); }
 
-.hex-name {
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  color: oklch(0.18 0.02 40);
-}
+.trigram-row { display: flex; justify-content: center; gap: 28px; }
+.tri-card    { display: grid; justify-items: center; gap: 3px; }
+.tri-label   { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: oklch(0.52 0.03 40); }
+.tri-sym     { font-size: 28px; color: #b54433; }
+.tri-name    { font-size: 15px; font-weight: 700; color: oklch(0.18 0.02 40); }
 
-.trigram-row {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
+.body-use     { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.bu-cell      { background: oklch(0.96 0.006 67.78); border-radius: 8px; padding: 10px 10px; text-align: center; }
+.bu-label     { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(0.52 0.03 40); margin-bottom: 4px; }
+.bu-value     { font-size: 15px; font-weight: 700; }
+.bu-verdict   { grid-column: 1 / -1; text-align: center; padding: 8px; border-radius: 8px; background: oklch(1 0 0); border: 1px solid oklch(0.905 0.015 55); font-size: 15px; font-weight: 600; }
 
-.tri-card {
-  display: grid;
-  justify-items: center;
-  gap: 2px;
-}
-
-.tri-label {
-  font-size: 9px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: oklch(0.52 0.03 40);
-}
-
-.tri-sym { font-size: 24px; color: #b54433; }
-
-.tri-name {
-  font-size: 12px;
-  font-weight: 700;
-  color: oklch(0.18 0.02 40);
-}
-
-.body-use {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6px;
-}
-
-.bu-cell {
-  background: oklch(0.96 0.006 67.78);
-  border-radius: 6px;
-  padding: 7px 8px;
-  text-align: center;
-}
-
-.bu-label {
-  font-size: 9px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: oklch(0.52 0.03 40);
-  margin-bottom: 2px;
-}
-
-.bu-value { font-size: 12px; font-weight: 700; }
-
-.bu-verdict {
-  grid-column: 1 / -1;
-  text-align: center;
-  padding: 6px;
-  border-radius: 6px;
-  background: oklch(1 0 0);
-  border: 1px solid oklch(0.905 0.015 55);
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.changed-hex {
-  padding: 10px;
-  border-radius: 8px;
-  background: oklch(1 0 0);
-  border: 1px dashed oklch(0.905 0.015 55);
-}
-
-.changed-label {
-  font-size: 11px;
-  color: oklch(0.52 0.03 40);
-  margin-bottom: 4px;
-}
-
-.changed-symbol {
-  font-size: 36px;
-  color: oklch(0.35 0.08 20);
-}
-
-.changed-name { font-size: 15px; font-weight: 700; }
-
-.changed-detail {
-  font-size: 10px;
-  color: oklch(0.52 0.03 40);
-  margin-top: 2px;
-}
+.changed-hex    { padding: 12px; border-radius: 10px; background: oklch(1 0 0); border: 1px dashed oklch(0.905 0.015 55); }
+.changed-label  { font-size: 15px; color: oklch(0.52 0.03 40); margin-bottom: 6px; }
+.changed-symbol { font-size: 40px; color: oklch(0.35 0.08 20); }
+.changed-name   { font-size: 16px; font-weight: 700; }
+.changed-detail { font-size: 15px; color: oklch(0.52 0.03 40); margin-top: 4px; }
 
 .semantic { margin-top: 4px; }
-
-.sem-tag {
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: 4px;
-  background: #b54433;
-  color: #fff;
-  font-size: 11px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.sem-desc {
-  font-size: 11px;
-  color: oklch(0.52 0.03 40);
-  line-height: 1.55;
-}
+.sem-tag  { display: inline-block; padding: 4px 10px; border-radius: 5px; background: #b54433; color: #fff; font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+.sem-desc { font-size: 15px; color: oklch(0.52 0.03 40); line-height: 1.6; }
 </style>

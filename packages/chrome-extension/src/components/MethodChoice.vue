@@ -28,20 +28,20 @@ const emit = defineEmits<{
 .method-choice {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 6px 0;
+  gap: 14px;
+  padding: 8px 0;
 }
 
 .method-card {
   flex: 1;
   display: grid;
-  grid-template-columns: 48px 1fr;
+  grid-template-columns: 56px 1fr;
   grid-template-rows: auto auto;
-  gap: 2px 12px;
+  gap: 4px 14px;
   align-items: center;
-  padding: 18px 16px;
+  padding: 22px 18px;
   border: 1px solid oklch(0.905 0.015 55);
-  border-radius: 12px;
+  border-radius: 14px;
   background: oklch(1 0 0);
   cursor: pointer;
   text-align: left;
@@ -51,7 +51,7 @@ const emit = defineEmits<{
 
 .method-card:hover {
   border-color: #b54433;
-  box-shadow: 0 2px 16px rgba(181, 68, 51, 0.1);
+  box-shadow: 0 4px 20px rgba(181, 68, 51, 0.12);
 }
 
 .method-card:active {
@@ -60,20 +60,20 @@ const emit = defineEmits<{
 
 .card-icon {
   grid-row: 1 / 3;
-  font-size: 26px;
+  font-size: 30px;
   justify-self: center;
   align-self: center;
 }
 
 .card-label {
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 800;
   color: oklch(0.18 0.02 40);
   align-self: end;
 }
 
 .card-hint {
-  font-size: 11px;
+  font-size: 12px;
   color: oklch(0.52 0.03 40);
   align-self: start;
 }
